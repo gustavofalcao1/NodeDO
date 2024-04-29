@@ -13,3 +13,5 @@
 	- yarn/npm start
 
 
+
+##### Copyright © 2023 - Gustavo Falcão
