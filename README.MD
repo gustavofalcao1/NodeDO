@@ -4,6 +4,15 @@
 * React
 * MariaDB
 
+## Features
+- [x] Add Task
+- [x] Done Task
+- [x] Undone Task
+- [x] Delete Task
+- [ ] Create Task Notebook
+- [ ] Create Shared Tasks
+- [ ] Create Shared Notebook
+
 ## Screen Shots
 ![NodeDO](./screenshots/01.png)
 
