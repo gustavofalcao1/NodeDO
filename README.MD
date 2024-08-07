@@ -13,7 +13,7 @@
 - [ ] Create Shared Tasks
 - [ ] Create Shared Notebook
 
-## Screen Shots
+## Screenshots
 ![NodeDO](./screenshots/01.png)
 
 ## Backend
