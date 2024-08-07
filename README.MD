@@ -1,14 +1,37 @@
 # NodeDO
+* Node
+* Yarn
+* React
+* MariaDB
+
 ## Screen Shots
-![nodedo](./00.png)
+![NodeDO](./screenshots/01.png)
 
-## Run Backend
-	- cd backend
-	- yarn/npm install
-	- yarn/npm start
+## Backend
+```
+cd backend
+```
+### Exec
+#### Install
+```
+yarn install
+```
+#### Run
+```
+yarn start
+```
 
-## Run Frontend
-	- cd frontend
-	- yarn/npm install
-	- yarn/npm start
+## Frontend
+```
+cd frontend
+```
+### Exec
+#### Install
+```
+yarn install
+```
+#### Run
+```
+yarn start
+```
 

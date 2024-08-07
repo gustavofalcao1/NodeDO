@@ -59,31 +59,33 @@ function App() {
 
   return (
     <div style={{ height: '100vh', display: 'flex', flexDirection: 'column' }}>
-      <h1 style={{marginLeft: 30}}>ToDo List</h1>
+      <h1 style={{marginLeft: 30, color: '#FFF'}}>NodeDO</h1>
       <div style={{ overflowY: 'auto', flex: 1 }}>
         <ul style={{listStyle: "none", justifyContent: "center", alignItems: "center"}}>
           {tasks.map((task, index) => (
             task.completed? null:
             <div key={index} style={{display: "flex", flexDirection: "row", alignSelf: "center", textAlign: "center"}}>
               <li style={{marginRight: 5, cursor: "pointer"}} onClick={() => doneTask(task._id)}><IoMdRadioButtonOff color='green' size={30} /></li>
-              <li style={{fontSize: 24, marginTop: -4}} key={task._id}>{task.title}</li>
+              <li style={{fontSize: 24, marginTop: -4, color: '#FFF'}} key={task._id}>{task.title}</li>
             </div>
           ))}
         </ul>
-        <div style={{marginLeft: 50, marginRight: 50, background: "#00000010", maxWidth: "100%", height: 5, borderRadius: 10}} />
+        {tasks.length > 0 ? 
+          <div style={{marginLeft: 50, marginRight: 50, background: 'rgba(79, 79, 79, 0.6)', maxWidth: "100%", height: 5, borderRadius: 10}} />
+        : null}
         <ul style={{listStyle: "none", justifyContent: "center", alignItems: "center"}}>
           {tasks.map((task, index) => (
             !task.completed? null:
             <div key={index} style={{display: "flex", flexDirection: "row", alignSelf: "center", textAlign: "center"}}>
               <li style={{marginRight: 5, cursor: "pointer"}} onClick={() => doneTask(task._id)}><IoIosCheckmarkCircle color='green' size={30} /></li>
-              <li style={{fontSize: 24, marginTop: -4}} key={task._id}><s>{task.title}</s></li>
+              <li style={{fontSize: 24, marginTop: -4, color: '#FFF'}} key={task._id}><s>{task.title}</s></li>
               <li style={{marginLeft: 20, alignSelf: "center", cursor: "pointer"}} onClick={() => dropTask(task._id)}><IoIosTrash color='red' size={20} /></li>
             </div>
           ))}
         </ul>
       </div>
       <div style={{display: "flex", flexDirection: "row", marginBottom: 10, marginTop: 30, width: "100%", justifyContent: "center", alignContent: "center"}}>
-          <div style={{display: "flex", flexDirection: "row", height: 40, width: 620, background: "#000000E0", justifyContent: "center", alignContent: "center", borderRadius: 25, padding: 10 }}>
+          <div style={{display: "flex", flexDirection: "row", height: 40, width: 620, background: 'rgba(79, 79, 79, 0.6)', justifyContent: "center", alignContent: "center", borderRadius: 25, padding: 10 }}>
             <input
               type="text"
               style={{width: "100%", borderStyle: "none", outlineStyle: "none", fontSize: 20, background: "transparent", color: "white"}}
