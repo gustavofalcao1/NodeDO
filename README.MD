@@ -2,7 +2,7 @@
 * Node
 * Yarn
 * React
-* MariaDB
+* MongoDB
 
 ## Features
 - [x] Add Task
